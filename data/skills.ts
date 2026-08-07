@@ -12,11 +12,11 @@ const skills = [
       },
       {
         name: "Python",
-        image: "/icons/python.jfif",
+        image: "/icons/python.png",
       },
       {
         name: "Power BI",
-        image: "/icons/power BI.jfif",
+        image: "/icons/power BI.png",
       },
       {
         name: "Tableau",
@@ -86,7 +86,7 @@ const skills = [
       },
       {
         name: "Canva",
-        image: "/icons/Canva.jfif",
+        image: "/icons/Canva.png",
       },
     ],
   },
