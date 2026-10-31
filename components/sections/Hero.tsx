@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -18,7 +19,8 @@ export default function Hero() {
 
       <Container className="flex min-h-screen items-center">
         <div className="grid w-full items-center gap-16 md:grid-cols-2">
-          {/* Left */}
+
+          {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             animate={{ opacity: 1, x: 0 }}
@@ -30,50 +32,65 @@ export default function Hero() {
               Hello, I'm
             </p>
 
-            <h1 className="mt-3 text-5xl font-extrabold leading-tight text-gray-900 md:text-7xl">
-              Risty
+            <h1 className="mt-3 text-5xl font-extrabold leading-tight text-gray-900 md:text-6xl">
+              Risty Anugrah
               <br />
-              Anugrah Dwi Septiana
+              Dwi Septiana
             </h1>
 
-            <h2 className="mt-6 text-3xl font-semibold text-gray-700 md:text-4xl">
+            <h2 className="mt-6 text-2xl font-semibold text-gray-700 md:text-3xl">
               Data Analyst
               <br />
               & Business Intelligence
             </h2>
 
-            <p className="mt-8 max-w-xl leading-8 text-gray-600">
-              Informatics Engineering graduate with a strong passion for
-              Data Analytics and Business Intelligence. Experienced in SQL,
-              Python, Microsoft Excel, Power BI, Tableau, and ETL processes.
-              Passionate about transforming raw data into meaningful insights
-              through interactive dashboards that support data-driven
-              business decision making.
+            <p className="mt-5 text-lg font-semibold text-pink-500">
+              Turning Data into Insights, Driving Better Decisions.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <p className="mt-5 max-w-xl leading-8 text-gray-600">
+              Informatics Engineering graduate with a strong interest in
+              Data Analytics and Business Intelligence. Experienced in
+              working on data projects involving data cleaning,
+              transformation, exploratory data analysis, and dashboard
+              development. Skilled in using Python, SQL, Microsoft Excel,
+              Power BI, and Tableau to transform data into meaningful
+              insights that support better business decisions.
+            </p>
+
+            {/* Buttons */}
+            <div className="mt-8 flex flex-wrap gap-4">
               <Link href={profile.cv} target="_blank">
                 <Button>Download CV</Button>
               </Link>
 
               <Link href="#projects">
-                <Button variant="outline">
-                  View Projects
-                </Button>
+                <Button variant="outline">View Projects</Button>
               </Link>
             </div>
 
-            <div className="mt-10 flex flex-wrap gap-3">
-              <Badge text="SQL" />
-              <Badge text="Python" />
-              <Badge text="Power BI" />
-              <Badge text="Tableau" />
-              <Badge text="Excel" />
-              <Badge text="ETL" />
+            {/* Technical Skills */}
+            <div className="mt-10">
+              <p className="mb-4 text-sm font-semibold text-gray-700">
+                Technical Skills
+              </p>
+
+              <div className="flex flex-wrap gap-3">
+                <Badge text="Python" />
+                <Badge text="SQL" />
+                <Badge text="Microsoft Excel" />
+                <Badge text="Power BI" />
+                <Badge text="Tableau" />
+                <Badge text="PostgreSQL" />
+                <Badge text="Pandas" />
+                <Badge text="Data Visualization" />
+                <Badge text="ETL" />
+                <Badge text="Data Warehousing" />
+              </div>
             </div>
           </motion.div>
 
-          {/* Right */}
+          {/* Right Content - Profile Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -90,6 +107,7 @@ export default function Hero() {
               />
             </div>
           </motion.div>
+
         </div>
       </Container>
     </section>

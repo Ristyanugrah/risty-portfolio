@@ -1,103 +1,269 @@
+
 const projects = [
+  // =====================================
+  // DATA ANALYTICS & BUSINESS INTELLIGENCE
+  // =====================================
+
   {
-    title: "Inventory Management System",
+    title: "Interactive Sales Dashboard",
+    category: "Data Analytics",
     description:
-      "Website inventory berbasis Laravel yang menerapkan metode EOQ, ROP, dan ABC Analysis untuk membantu pengelolaan stok barang.",
-    image: "/projects/inventory.png",
-    tech: ["Laravel", "PHP", "MySQL"],
-    github: "",
-    demo: "",
+      "An interactive sales dashboard developed using Microsoft Excel to monitor KPIs, analyze sales trends, identify top-performing products, and support business decision-making.",
+    image: "/projects/data-analytics/images/interactive-sales-dashboard.png",
+    tech: [
+      "Microsoft Excel",
+      "Pivot Table",
+      "Pivot Chart",
+      "Slicer",
+      "KPI Analysis",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/Interactive Sales Dashboard.pdf",
+    presentationType: "pdf",
   },
 
   {
-    title: "Sales Dashboard - Power BI",
+    title: "AdventureWorks Sales Insights & Analytics Dashboard",
+    category: "Data Analytics",
     description:
-      "Dashboard interaktif untuk menganalisis penjualan, profit, kategori produk, dan KPI menggunakan Power BI.",
-    image: "/projects/powerbi.png",
-    tech: ["Power BI", "Excel"],
-    github: "",
-    demo: "",
+      "An interactive Power BI dashboard analyzing sales performance, product performance, customer insights, and regional trends.",
+    image: "/projects/data-analytics/images/adventureworks-dashboard.png",
+    tech: [
+      "Power BI",
+      "Power Query",
+      "DAX",
+      "Data Modeling",
+      "KPI Dashboard",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/AdventureWorks Sales Insights & Analytics Dashboard.pdf",
+    presentationType: "pdf",
   },
 
   {
-    title: "Sales Dashboard - Tableau",
+    title: "Customer RFM Analysis",
+    category: "Data Analytics",
     description:
-      "Dashboard Tableau yang menampilkan tren penjualan, profit, segmentasi pelanggan, dan insight bisnis.",
-    image: "/projects/tableau.png",
-    tech: ["Tableau"],
-    github: "",
-    demo: "",
+      "A customer segmentation project based on Recency, Frequency, and Monetary value to identify customer groups and support targeted marketing strategies.",
+    image: "/projects/data-analytics/images/customer-rfm-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "RFM Analysis",
+      "Customer Segmentation",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/PPT_Customer_RFM_Analysis_Portofolio_Risty.pdf",
+    presentationType: "pdf",
   },
 
   {
-    title: "ETL Data Warehouse",
+    title: "Customer Satisfaction & Sentiment Analysis",
+    category: "Data Analytics",
     description:
-      "Membangun proses ETL menggunakan PostgreSQL serta membuat Data Warehouse dengan Fact dan Dimension Table.",
-    image: "/projects/etl.png",
-    tech: ["PostgreSQL", "SQL"],
-    github: "",
-    demo: "",
+      "An analytical project exploring customer satisfaction, sentiment, feedback patterns, and service improvement opportunities.",
+    image: "/projects/data-analytics/images/customer-satisfaction-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "Exploratory Data Analysis",
+      "Sentiment Analysis",
+      "Customer Satisfaction",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/Customer_Satisfaction_Analysis_Portofolio_Risty.pdf",
+    presentationType: "pdf",
   },
 
   {
-    title: "Python Exploratory Data Analysis",
+    title: "Marketing Channel Performance Analysis",
+    category: "Data Analytics",
     description:
-      "Melakukan data cleaning, visualisasi, dan exploratory data analysis menggunakan Python.",
-    image: "/projects/python.png",
-    tech: ["Python", "Pandas", "Matplotlib"],
-    github: "",
-    demo: "",
+      "An analysis of marketing channel performance, campaign effectiveness, and channel contributions to support marketing decisions.",
+    image: "/projects/data-analytics/images/marketing-channel-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "Microsoft Excel",
+      "Marketing Analytics",
+      "Performance Analysis",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/Portofolio_Analisis_Performa_Marketing_Channel_Bahasa_Indonesia.pdf",
+    presentationType: "pdf",
   },
 
   {
-    title: "Advanced SQL Analysis",
+    title: "Social Media Engagement Analysis",
+    category: "Data Analytics",
     description:
-      "Analisis data menggunakan SQL dengan CTE, Window Function, Subquery, Join, dan Aggregate Function.",
-    image: "/projects/sql.png",
-    tech: ["SQL", "PostgreSQL"],
-    github: "",
-    demo: "",
+      "An analytical project examining social media engagement, content performance, audience interactions, and engagement patterns.",
+    image: "/projects/data-analytics/images/social-media-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "Exploratory Data Analysis",
+      "Engagement Analysis",
+      "Content Performance",
+      "Data Visualization",
+    ],
+    presentation: "/projects/data-analytics/Analisis_Keterlibatan_Media_Sosial_Portofolio_ID.pdf",
+    presentationType: "pdf",
   },
+
   {
-  title: "Interactive Sales Dashboard",
+    title: "Food Delivery Performance Analysis",
+    category: "Data Analytics",
+    description:
+      "An analysis of delivery time, distance, weather, traffic conditions, and operational efficiency to identify factors affecting delivery performance.",
+    image: "/projects/data-analytics/images/food-delivery-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Tableau",
+      "Exploratory Data Analysis",
+      "Statistical Analysis",
+    ],
+    presentation: "/projects/data-analytics/Food_Delivery_Performance_Data_Analyst_Portfolio.pdf",
+    presentationType: "pdf",
+  },
 
-  description:
-    "An interactive sales dashboard developed using Microsoft Excel to monitor KPIs, analyze sales trends, identify top-performing products, and support business decision-making through data visualization.",
+  {
+    title: "Olist Sales & Revenue Analysis",
+    category: "Data Analytics",
+    description:
+      "A business analysis project exploring sales performance, revenue trends, profitability, and business insights using the Olist dataset.",
+    image: "/projects/data-analytics/images/olist-sales-analysis.png",
+    tech: [
+      "SQL",
+      "PostgreSQL",
+      "Power BI",
+      "DAX",
+      "Power Query",
+      "Business Analysis",
+    ],
+    presentation: "/projects/data-analytics/Olist_Sales_Revenue_Analysis_Data_Analyst_Revised.pdf",
+    presentationType: "pdf",
+  },
 
-  image: "/projects/excel-dashboard.png",
+  // =====================================
+  // WEB DEVELOPMENT & INFORMATION SYSTEMS
+  // =====================================
 
-  tech: [
-    "Microsoft Excel",
-    "Pivot Table",
-    "Pivot Chart",
-    "Slicer",
-    "Data Visualization",
-  ],
+  {
+    title: "Internship Registration Management System",
+    category: "Web Development",
+    description:
+      "A web-based system for managing internship registration, applicant information, and administrative data.",
+    image: "/projects/web-development/images/internship-registration.png",
+    tech: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Database Management",
+    ],
+    presentation: "/projects/web-development/Project_1_Sistem_Manajemen_Pendaftaran_Magang.pdf",
+    presentationType: "pdf",
+  },
 
-  demo: "https://canva.link/x4io0k5fg9p0lls",
+  {
+    title: "Digital Guestbook System",
+    category: "Web Development",
+    description:
+      "A digital guestbook application for visitor registration, QR code-based access, photo uploads, and guest data management.",
+    image: "/projects/web-development/images/digital-guestbook.png",
+    tech: [
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "QR Code",
+      "Database Management",
+    ],
+    presentation: "/projects/web-development/Project_2_Sistem_Buku_Tamu_Digital_Revisi_Portofolio_Tanpa_Garis.pdf",
+    presentationType: "pdf",
+  },
 
-  github: "",
-},
-{
-  title: "AdventureWorks Sales Insights & Analytics Dashboard",
+  {
+    title: "BBPVP Guestbook Application",
+    category: "Web Development",
+    description:
+      "A guestbook application supporting visitor registration, attendance recording, and administrative data management.",
+    image: "/projects/web-development/images/bbpvp-guestbook.png",
+    tech: [
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "System Analysis",
+      "Database Management",
+    ],
+    presentation: "/projects/web-development/Project_3_Aplikasi_Buku_Tamu_BBPVP.pdf",
+    presentationType: "pdf",
+  },
 
-  description:
-    "An interactive business intelligence dashboard built using Microsoft Power BI to analyze AdventureWorks sales performance. The dashboard provides KPI monitoring, sales trends, product performance, customer insights, and regional analysis to support data-driven decision making.",
+  {
+    title: "Sundara Trans Bus Ticket Booking System",
+    category: "Web Development",
+    description:
+      "A web-based bus ticket booking system for passenger reservations, ticket information, and booking data management.",
+    image: "/projects/web-development/images/bus-ticket-booking.png",
+    tech: [
+      "PHP",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Database Management",
+      "Web Development",
+    ],
+    presentation: "/projects/web-development/Project_4_Sistem_Pemesanan_Tiket_Bus_Sundara_Trans.pdf",
+    presentationType: "pdf",
+  },
 
-  image: "/projects/powerbi-dashboard.png",
+  {
+    title: "Inventory Management System - UD. Diamond Hill",
+    category: "Web Development",
+    description:
+      "An inventory management system using Economic Order Quantity (EOQ), Reorder Point (ROP), and ABC Analysis methods.",
+    image: "/projects/web-development/images/inventory-management.png",
+    tech: [
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "HTML",
+      "CSS",
+      "EOQ",
+      "ROP",
+      "ABC Analysis",
+    ],
+    presentation: "/projects/web-development/Project_5_Sistem_Manajemen_Persediaan_UD_Diamond_Hill.pdf",
+    presentationType: "pdf",
+  },
 
-  tech: [
-    "Power BI",
-    "Power Query",
-    "DAX",
-    "Data Modeling",
-    "Excel"
-  ],
-
-  demo: "https://canva.link/a04h599vb0pd39j",
-
-  github: "",
-},
+  {
+    title: "Indonesia Nature Tourism Blog Website",
+    category: "Web Development",
+    description:
+      "A website presenting information about Indonesian natural tourism destinations through an informative and user-friendly interface.",
+    image: "/projects/web-development/images/nature-tourism-website.png",
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Web Design",
+      "Web Development",
+    ],
+    presentation: "/projects/web-development/Project_6_Website_Blog_Wisata_Alam_Indonesia.pdf",
+    presentationType: "pdf",
+  },
 ];
 
 export default projects;

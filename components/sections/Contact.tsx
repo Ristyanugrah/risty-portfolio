@@ -108,7 +108,7 @@ export default function Contact() {
                   target="_blank"
                   className="text-gray-700 hover:text-pink-500"
                 >
-                  github.com/Ristyanugra
+                  github.com/Ristyanugrah
                 </a>
 
               </div>

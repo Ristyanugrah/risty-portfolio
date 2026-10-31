@@ -1,3 +1,4 @@
+
 const skills = [
   {
     category: "Data Analytics",
@@ -40,6 +41,10 @@ const skills = [
         name: "MongoDB",
         image: "/icons/MongoDB.png",
       },
+      {
+        name: "DBeaver",
+        image: "/icons/DBeaver.png",
+      },
     ],
   },
 
@@ -79,6 +84,10 @@ const skills = [
       {
         name: "Visual Studio Code",
         image: "/icons/VS Code.png",
+      },
+      {
+        name: "Postman",
+        image: "/icons/Postman.png",
       },
       {
         name: "Figma",
