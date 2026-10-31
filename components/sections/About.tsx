@@ -28,12 +28,13 @@ export default function About() {
 
           {/* LEFT - PROFILE IMAGE */}
           <div className="flex justify-center">
-            <div className="relative h-[520px] w-full max-w-[380px] overflow-hidden rounded-3xl border-2 border-pink-300 bg-white shadow-xl">
+            <div className="relative h-[560px] w-full max-w-[460px] overflow-hidden rounded-3xl border-2 border-pink-300 bg-white shadow-xl md:h-[650px]">
               <Image
                 src={profile.aboutImage}
                 alt={profile.name}
                 fill
-                className="object-contain p-4"
+                sizes="(max-width: 768px) 100vw, 460px"
+                className="object-contain p-2"
                 priority
               />
             </div>
@@ -65,11 +66,12 @@ export default function About() {
             </p>
 
             <p className="mt-5 leading-8 text-gray-600">
-              I work with Python, SQL, Microsoft Excel, Power BI, and
-              Tableau to analyze data and communicate findings through
-              clear visualizations. I am continuously developing my
-              analytical and technical skills to grow as a Data Analyst
-              and Business Intelligence professional.
+              I work with Python, SQL, Microsoft Excel, Power BI, Tableau,
+              DBeaver, and Postman to analyze data, manage databases,
+              and communicate findings through clear visualizations.
+              I am continuously developing my analytical and technical
+              skills to grow as a Data Analyst and Business Intelligence
+              professional.
             </p>
 
             {/* PROFILE INFORMATION */}
@@ -147,6 +149,8 @@ export default function About() {
                   "Power BI",
                   "Tableau",
                   "PostgreSQL",
+                  "DBeaver",
+                  "Postman",
                   "ETL",
                   "Data Visualization",
                 ].map((skill) => (
