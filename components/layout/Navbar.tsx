@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -7,8 +8,8 @@ import { HiMenu, HiX } from "react-icons/hi";
 const menus = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#projects" },
   { name: "Certificates", href: "#certificates" },
   { name: "Contact", href: "#contact" },
 ];
@@ -44,6 +45,7 @@ export default function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
+          aria-label={open ? "Close menu" : "Open menu"}
           className="text-3xl text-pink-500 md:hidden"
         >
           {open ? <HiX /> : <HiMenu />}

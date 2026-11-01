@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRef, useState } from "react";
@@ -42,7 +43,6 @@ export default function Contact() {
       <div className="mx-auto max-w-6xl px-6">
 
         <div className="text-center">
-
           <h2 className="text-5xl font-bold text-gray-900">
             Contact Me
           </h2>
@@ -50,13 +50,11 @@ export default function Contact() {
           <p className="mt-4 text-gray-600">
             Let's build something amazing together.
           </p>
-
         </div>
 
         <div className="mt-16 grid gap-10 md:grid-cols-2">
 
           {/* Contact Info */}
-
           <div className="rounded-3xl border border-pink-200 bg-pink-50 p-8 shadow-lg">
 
             <h3 className="mb-8 text-2xl font-bold text-pink-500">
@@ -76,26 +74,17 @@ export default function Contact() {
 
               <div>
                 <p className="font-semibold text-pink-500">
-                  📱 WhatsApp
-                </p>
-                <p className="text-gray-700">
-                  +62 8956 0568 5577
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-pink-500">
                   💼 LinkedIn
                 </p>
 
                 <a
                   href="https://www.linkedin.com/in/risty-septiana/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-700 hover:text-pink-500"
                 >
                   linkedin.com/in/risty-septiana
                 </a>
-
               </div>
 
               <div>
@@ -104,21 +93,19 @@ export default function Contact() {
                 </p>
 
                 <a
-                  href="https://github.com/Ristyanugra"
+                  href="https://github.com/ristyanugrah"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-700 hover:text-pink-500"
                 >
-                  github.com/Ristyanugrah
+                  github.com/ristyanugrah
                 </a>
-
               </div>
 
             </div>
-
           </div>
 
           {/* Contact Form */}
-
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -172,11 +159,9 @@ export default function Contact() {
               </button>
 
             </div>
-
           </form>
 
         </div>
-
       </div>
     </section>
   );

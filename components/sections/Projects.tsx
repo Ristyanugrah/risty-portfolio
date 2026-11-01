@@ -1,11 +1,21 @@
 
+"use client";
+
 import Image from "next/image";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import FadeUp from "@/components/ui/FadeUp";
 import projects from "@/data/projects";
 
-export default function Projects() {
+interface ProjectsProps {
+  selectedSkill: string | null;
+  onClearFilter: () => void;
+}
+
+export default function Projects({
+  selectedSkill,
+  onClearFilter,
+}: ProjectsProps) {
   const categories = [
     "Data Analytics",
     "Web Development",
@@ -22,10 +32,38 @@ export default function Projects() {
           subtitle="Explore my data analytics and web development projects."
         />
 
+        {selectedSkill && (
+          <div className="mb-10 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-pink-200 bg-white p-5 shadow-sm">
+            <div>
+              <p className="text-sm text-gray-500">
+                Showing projects using:
+              </p>
+              <p className="mt-1 font-bold text-pink-600">
+                {selectedSkill}
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={onClearFilter}
+              className="rounded-xl border border-pink-500 px-5 py-2.5 text-sm font-semibold text-pink-600 transition hover:bg-pink-500 hover:text-white"
+            >
+              Clear Filter ✕
+            </button>
+          </div>
+        )}
+
         {categories.map((category) => {
           const categoryProjects = projects.filter(
-            (project) => project.category === category
+            (project) =>
+              project.category === category &&
+              (!selectedSkill ||
+                project.tech.includes(selectedSkill))
           );
+
+          if (categoryProjects.length === 0) {
+            return null;
+          }
 
           return (
             <div key={category} className="mb-20">
@@ -63,8 +101,11 @@ export default function Projects() {
                         ) : (
                           <div className="flex h-full flex-col items-center justify-center text-pink-500">
                             <span className="text-5xl">
-                              {category === "Data Analytics" ? "📊" : "💻"}
+                              {category === "Data Analytics"
+                                ? "📊"
+                                : "💻"}
                             </span>
+
                             <p className="mt-3 text-sm font-semibold">
                               {category}
                             </p>
@@ -106,26 +147,16 @@ export default function Projects() {
                           </div>
                         </div>
 
-                        {/* Presentation Buttons */}
-                        <div className="mt-7 flex flex-wrap gap-3">
-
+                        {/* View Presentation Button */}
+                        <div className="mt-7">
                           <a
                             href={project.presentation}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex flex-1 items-center justify-center rounded-xl bg-pink-500 px-3 py-3 text-sm font-semibold text-white transition hover:bg-pink-600"
+                            className="flex w-full items-center justify-center rounded-xl bg-pink-500 px-4 py-3 text-sm font-semibold text-white transition hover:bg-pink-600"
                           >
                             View Presentation ↗
                           </a>
-
-                          <a
-                            href={project.presentation}
-                            download
-                            className="flex flex-1 items-center justify-center rounded-xl border border-pink-500 px-3 py-3 text-sm font-semibold text-pink-600 transition hover:bg-pink-50"
-                          >
-                            Download ↓
-                          </a>
-
                         </div>
 
                       </div>
@@ -137,6 +168,30 @@ export default function Projects() {
             </div>
           );
         })}
+
+        {/* Empty State */}
+        {selectedSkill &&
+          !projects.some((project) =>
+            project.tech.includes(selectedSkill)
+          ) && (
+            <div className="rounded-3xl border border-pink-200 bg-white px-6 py-12 text-center shadow-sm">
+              <p className="text-lg font-bold text-gray-800">
+                No projects found
+              </p>
+
+              <p className="mt-2 text-sm text-gray-500">
+                No projects are currently tagged with {selectedSkill}.
+              </p>
+
+              <button
+                type="button"
+                onClick={onClearFilter}
+                className="mt-5 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-pink-600"
+              >
+                Show All Projects
+              </button>
+            </div>
+          )}
 
       </Container>
     </section>
