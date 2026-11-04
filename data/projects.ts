@@ -36,7 +36,8 @@ const projects = [
       "KPI Dashboard",
       "Data Visualization",
     ],
-    presentation: "/projects/data-analytics/AdventureWorks Sales Insights & Analytics Dashboard.pdf",
+    presentation:
+      "/projects/data-analytics/AdventureWorks Sales Insights & Analytics Dashboard.pdf",
     presentationType: "pdf",
   },
 
@@ -54,7 +55,8 @@ const projects = [
       "Customer Segmentation",
       "Data Visualization",
     ],
-    presentation: "/projects/data-analytics/PPT_Customer_RFM_Analysis_Portofolio_Risty.pdf",
+    presentation:
+      "/projects/data-analytics/PPT_Customer_RFM_Analysis_Portofolio_Risty.pdf",
     presentationType: "pdf",
   },
 
@@ -72,7 +74,8 @@ const projects = [
       "Customer Satisfaction",
       "Data Visualization",
     ],
-    presentation: "/projects/data-analytics/Customer_Satisfaction_Analysis_Portofolio_Risty.pdf",
+    presentation:
+      "/projects/data-analytics/Customer_Satisfaction_Sentiment_Analysis_Portofolio_Risty.pdf",
     presentationType: "pdf",
   },
 
@@ -90,7 +93,8 @@ const projects = [
       "Performance Analysis",
       "Data Visualization",
     ],
-    presentation: "/projects/data-analytics/Portofolio_Analisis_Performa_Marketing_Channel_Bahasa_Indonesia.pdf",
+    presentation:
+      "/projects/data-analytics/Portofolio_Analisis_Performa_Marketing_Channel_Bahasa_Indonesia.pdf",
     presentationType: "pdf",
   },
 
@@ -108,7 +112,8 @@ const projects = [
       "Content Performance",
       "Data Visualization",
     ],
-    presentation: "/projects/data-analytics/Analisis_Keterlibatan_Media_Sosial_Portofolio_ID.pdf",
+    presentation:
+      "/projects/data-analytics/Analisis_Keterlibatan_Media_Sosial_Portofolio_ID.pdf",
     presentationType: "pdf",
   },
 
@@ -126,7 +131,8 @@ const projects = [
       "Exploratory Data Analysis",
       "Statistical Analysis",
     ],
-    presentation: "/projects/data-analytics/Food_Delivery_Performance_Data_Analyst_Portfolio.pdf",
+    presentation:
+      "/projects/data-analytics/Food_Delivery_Performance_Data_Analyst_Portfolio.pdf",
     presentationType: "pdf",
   },
 
@@ -144,7 +150,30 @@ const projects = [
       "Power Query",
       "Business Analysis",
     ],
-    presentation: "/projects/data-analytics/Olist_Sales_Revenue_Analysis_Data_Analyst_Revised.pdf",
+    presentation:
+      "/projects/data-analytics/Olist_Sales_Revenue_Analysis_Data_Analyst_Revised.pdf",
+    presentationType: "pdf",
+  },
+
+  // NEW PROJECT: MARKET BASKET ANALYSIS
+  {
+    title: "E-Commerce Market Basket Analysis",
+    category: "Data Analytics",
+    description:
+      "An e-commerce transaction analysis project using Market Basket Analysis and Association Rule Mining to identify products frequently purchased together. The results provide insights for cross-selling, product recommendations, and product bundling strategies.",
+    image: "/projects/data-analytics/images/market-basket-analysis.png",
+    tech: [
+      "Python",
+      "Pandas",
+      "Market Basket Analysis",
+      "Association Rule Mining",
+      "Support",
+      "Confidence",
+      "Lift",
+      "Data Visualization",
+    ],
+    presentation:
+      "/projects/data-analytics/Portfolio_Ecommerce_Market_Basket_Analysis.pdf",
     presentationType: "pdf",
   },
 
@@ -167,7 +196,8 @@ const projects = [
       "JavaScript",
       "Database Management",
     ],
-    presentation: "/projects/web-development/Project_1_Sistem_Manajemen_Pendaftaran_Magang.pdf",
+    presentation:
+      "/projects/web-development/Project_1_Sistem_Manajemen_Pendaftaran_Magang.pdf",
     presentationType: "pdf",
   },
 
@@ -186,7 +216,8 @@ const projects = [
       "QR Code",
       "Database Management",
     ],
-    presentation: "/projects/web-development/Project_2_Sistem_Buku_Tamu_Digital_Revisi_Portofolio_Tanpa_Garis.pdf",
+    presentation:
+      "/projects/web-development/Project_2_Sistem_Buku_Tamu_Digital_Revisi_Portofolio_Tanpa_Garis.pdf",
     presentationType: "pdf",
   },
 
@@ -205,7 +236,8 @@ const projects = [
       "System Analysis",
       "Database Management",
     ],
-    presentation: "/projects/web-development/Project_3_Aplikasi_Buku_Tamu_BBPVP.pdf",
+    presentation:
+      "/projects/web-development/Project_3_Aplikasi_Buku_Tamu_BBPVP.pdf",
     presentationType: "pdf",
   },
 
@@ -224,7 +256,8 @@ const projects = [
       "Database Management",
       "Web Development",
     ],
-    presentation: "/projects/web-development/Project_4_Sistem_Pemesanan_Tiket_Bus_Sundara_Trans.pdf",
+    presentation:
+      "/projects/web-development/Project_4_Sistem_Pemesanan_Tiket_Bus_Sundara_Trans.pdf",
     presentationType: "pdf",
   },
 
@@ -244,7 +277,8 @@ const projects = [
       "ROP",
       "ABC Analysis",
     ],
-    presentation: "/projects/web-development/Project_5_Sistem_Manajemen_Persediaan_UD_Diamond_Hill.pdf",
+    presentation:
+      "/projects/web-development/Project_5_Sistem_Manajemen_Persediaan_UD_Diamond_Hill.pdf",
     presentationType: "pdf",
   },
 
@@ -261,7 +295,8 @@ const projects = [
       "Responsive Web Design",
       "Web Development",
     ],
-    presentation: "/projects/web-development/Project_6_Website_Blog_Wisata_Alam_Indonesia.pdf",
+    presentation:
+      "/projects/web-development/Project_6_Website_Blog_Wisata_Alam_Indonesia.pdf",
     presentationType: "pdf",
   },
 ];

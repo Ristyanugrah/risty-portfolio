@@ -21,6 +21,11 @@ export default function Projects({
     "Web Development",
   ];
 
+  const filteredProjects = projects.filter(
+    (project) =>
+      !selectedSkill || project.tech.includes(selectedSkill)
+  );
+
   return (
     <section
       id="projects"
@@ -54,11 +59,8 @@ export default function Projects({
         )}
 
         {categories.map((category) => {
-          const categoryProjects = projects.filter(
-            (project) =>
-              project.category === category &&
-              (!selectedSkill ||
-                project.tech.includes(selectedSkill))
+          const categoryProjects = filteredProjects.filter(
+            (project) => project.category === category
           );
 
           if (categoryProjects.length === 0) {
@@ -83,14 +85,12 @@ export default function Projects({
 
               {/* Project Grid */}
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
                 {categoryProjects.map((project) => (
                   <FadeUp key={project.title}>
                     <div className="group flex h-full flex-col overflow-hidden rounded-3xl border border-pink-200 bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
 
                       {/* Project Image */}
                       <div className="relative h-56 w-full overflow-hidden bg-pink-100">
-
                         {project.image ? (
                           <Image
                             src={project.image}
@@ -115,12 +115,10 @@ export default function Projects({
                         <span className="absolute left-4 top-4 rounded-full bg-pink-500 px-4 py-1.5 text-xs font-semibold text-white shadow">
                           Featured Project
                         </span>
-
                       </div>
 
                       {/* Project Details */}
                       <div className="flex flex-1 flex-col p-6">
-
                         <h4 className="text-lg font-bold leading-7 text-gray-900">
                           {project.title}
                         </h4>
@@ -158,40 +156,35 @@ export default function Projects({
                             View Presentation ↗
                           </a>
                         </div>
-
                       </div>
                     </div>
                   </FadeUp>
                 ))}
-
               </div>
             </div>
           );
         })}
 
         {/* Empty State */}
-        {selectedSkill &&
-          !projects.some((project) =>
-            project.tech.includes(selectedSkill)
-          ) && (
-            <div className="rounded-3xl border border-pink-200 bg-white px-6 py-12 text-center shadow-sm">
-              <p className="text-lg font-bold text-gray-800">
-                No projects found
-              </p>
+        {selectedSkill && filteredProjects.length === 0 && (
+          <div className="rounded-3xl border border-pink-200 bg-white px-6 py-12 text-center shadow-sm">
+            <p className="text-lg font-bold text-gray-800">
+              No projects found
+            </p>
 
-              <p className="mt-2 text-sm text-gray-500">
-                No projects are currently tagged with {selectedSkill}.
-              </p>
+            <p className="mt-2 text-sm text-gray-500">
+              No projects are currently tagged with {selectedSkill}.
+            </p>
 
-              <button
-                type="button"
-                onClick={onClearFilter}
-                className="mt-5 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-pink-600"
-              >
-                Show All Projects
-              </button>
-            </div>
-          )}
+            <button
+              type="button"
+              onClick={onClearFilter}
+              className="mt-5 rounded-xl bg-pink-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-pink-600"
+            >
+              Show All Projects
+            </button>
+          </div>
+        )}
 
       </Container>
     </section>
