@@ -1,6 +1,7 @@
 
 "use client";
 
+import { useCallback } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,6 +12,17 @@ import Badge from "@/components/ui/Badge";
 import profile from "@/data/profile";
 
 export default function Hero() {
+  const handleViewProjects = useCallback(() => {
+    const projectsSection = document.getElementById("projects");
+
+    if (projectsSection) {
+      projectsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-white pt-20">
       {/* Background Glow */}
@@ -64,9 +76,12 @@ export default function Hero() {
                 <Button>Download CV</Button>
               </Link>
 
-              <Link href="#projects">
-                <Button variant="outline">View Projects</Button>
-              </Link>
+              <Button
+                variant="outline"
+                onClick={handleViewProjects}
+              >
+                View Projects
+              </Button>
             </div>
 
             {/* Technical Skills */}
