@@ -1,17 +1,18 @@
+
 const certificates = [
+  {
+    title: "Data Analyst",
+    issuer: "Dibimbing.id",
+    year: "2026",
+    image: "/certificates/dibimbing-data-analyst-batch-23.png",
+    credential: "/certificates/dibimbing-data-analyst-batch-23.png",
+  },
   {
     title: "Database Administrator",
     issuer: "BNSP",
     year: "2025",
     image: "/certificates/bnsp-cover.jpg",
     credential: "/certificates/bnsp.pdf",
-  },
-  {
-    title: "Data Analyst Bootcamp",
-    issuer: "Dibimbing",
-    year: "2025",
-    image: "/certificates/bootcamp.jpg",
-    credential: "/certificates/bootcamp.jpg",
   },
   {
     title: "TOEFL Prediction Test",
@@ -35,19 +36,19 @@ const certificates = [
     credential: "/certificates/mbkm.jpg",
   },
   {
-  title: "Program Kreativitas Mahasiswa (PKM)",
-  issuer: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
-  year: "2024",
-  image: "/certificates/pkm.jpg",
-  credential: "/certificates/pkm.jpg",
-},
-{
-  title: "Mini Workshop: State of the Art Penulisan Jurnal Ilmiah",
-  issuer: "Laboratorium 1231 (iRoS)",
-  year: "2024",
-  image: "/certificates/iros-workshop.jpg",
-  credential: "/certificates/iros-workshop.jpg",
-},
+    title: "Program Kreativitas Mahasiswa (PKM)",
+    issuer: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
+    year: "2024",
+    image: "/certificates/pkm.jpg",
+    credential: "/certificates/pkm.jpg",
+  },
+  {
+    title: "Mini Workshop: State of the Art Penulisan Jurnal Ilmiah",
+    issuer: "Laboratorium 1231 (iRoS)",
+    year: "2024",
+    image: "/certificates/iros-workshop.jpg",
+    credential: "/certificates/iros-workshop.jpg",
+  },
 ];
 
 export default certificates;
